@@ -24,7 +24,7 @@ console.log("CookieLab iniciado. ¡El proyecto funciona!");
 
 // Guardar / crear una cookie que dura 'dias' días
 function guardarCookie(nombre, valor, dias) {
-  const segundos = dias * 24 * 60 * 60;
+  const segundos = dias * 24 * 60 ;
   document.cookie = nombre + "=" + valor + "; max-age=" + segundos + "; path=/";
 }
 
@@ -151,6 +151,6 @@ function iniciar() {
   aplicarTema();        // FASE 3
   identificarUsuario(); // FASE 1 y 2
   contarVisita();       // FASE 4
-  iniciarPanel();       // FASE 5 (y controles de la 3)
+  
 }
 document.addEventListener("DOMContentLoaded", iniciar);
